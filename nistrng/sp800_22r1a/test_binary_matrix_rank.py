@@ -28,7 +28,7 @@ class BinaryMatrix:
     def __init__(self, block: numpy.ndarray, rows_number: int, columns_number: int):
         self._rows = rows_number
         self._columns = columns_number
-        self._matrix = block
+        self._matrix = block.copy()
         self._base_rank = min(self._rows, self._columns)
 
     def _perform_row_operations(self, i: int, forward_elimination: bool):
