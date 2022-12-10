@@ -1,8 +1,10 @@
 NistRng
 *******
 This fork fixed some bugs of the main project that are mentioned here: https://github.com/InsaneMonster/NistRng/issues/10
-Changes seem to work fine.
-*******
+
+Changes seem to work fine
+
+
 Luca Pasqualini - SAILab - University of Siena
 ############################################################
 
