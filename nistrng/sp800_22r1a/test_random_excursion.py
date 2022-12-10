@@ -68,7 +68,7 @@ class RandomExcursionTest(Test):
                 cycles.append(cycle)
                 cycle: [] = [0]
         # Append the last cycle
-        cycles.append(cycle)
+        # cycles.append(cycle)
         # Compute the size of the cycles list
         cycles_size: int = len(cycles)
         # Setup frequencies table (Vk(x))
@@ -83,19 +83,13 @@ class RandomExcursionTest(Test):
             4: numpy.zeros(6, dtype=int),
         }
         # Count occurrences
+         # Count occurrences
         for value in frequencies_table.keys():
-            for k in range(frequencies_table[value].size):
-                count: int = 0
-                # Count how many cycles in which x occurs k times
-                for cycle in cycles:
-                    # Count how many times the value used as key of the table occurs in the current cycle
-                    occurrences: int = numpy.count_nonzero(numpy.array(cycle) == value)
-                    # If the value occurs k times, increment the cycle count
-                    if 5 > k == occurrences:
-                        count += 1
-                    elif occurrences >= 5:
-                        count += 1
-                frequencies_table[value][k] = count
+            for cycle in cycles:
+                occurrences: int = numpy.count_nonzero(numpy.array(cycle) == value)
+                if occurrences > 5:
+                    occurrences = 5
+                frequencies_table[value][occurrences] += 1
         # Compute the scores (P-values)
         scores: [] = []
         for value in frequencies_table.keys():
