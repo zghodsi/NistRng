@@ -61,8 +61,8 @@ class RandomExcursionTest(Test):
         for index, _ in enumerate(sum_prime[1:]):
             # Once a zero crossing is found add all the non zero elements of S' to the cycle
             # Else wrap up the cycle and start a new cycle
-            if sum_prime[index] != 0:
-                cycle += [sum_prime[index]]
+            if sum_prime[index + 1] != 0:
+                cycle += [sum_prime[index + 1]]
             else:
                 cycle += [0]
                 cycles.append(cycle)
