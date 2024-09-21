@@ -1,13 +1,5 @@
 NistRng
 *******
-This fork fixed some bugs of the main project that are mentioned here: https://github.com/InsaneMonster/NistRng/issues/10
-
-Changes seem to work fine
-
-
-Luca Pasqualini - SAILab - University of Siena
-############################################################
-
 This is a *python 3.6* and above implementation of the **NIST Test Suite for Random Number Generators** (RNGs).
 The idea behind this work is to make a script oriented object-oriented framework for said tests.
 This is born from my research since I required to use the tests inside a python research project and I found existing
@@ -32,19 +24,9 @@ This work is inspired by the great work of David Johnston (C) 2017, which can be
 
 For additional information check the provided license file.
 
-**How to install**
-
-If you only need to use the framework, just download the pip package *nistrng* and import the package in your scripts:
-
-- pip install nistrng
-
-If you want to improve/modify/extends the framework, or even just try my own simple benchmarks at home, download or clone
-the git `repository <https://github.com/InsaneMonster/NistRng>`_. You are welcome to open issues or participate in the project, especially if further optimization is achieved.
-
 **How to use**
 
-For a simple use case, refer to benchmark provided in the `repository <https://github.com/InsaneMonster/NistRng>`_. For advanced use, refer to the built-in documentation
-and to the provided source code in the `repository <https://github.com/InsaneMonster/NistRng>`_.
+Use the local repo, and not the packaged version. After setting up the environment, `python numpy_rng_test.py` should work.
 
 **Current issues**
 
