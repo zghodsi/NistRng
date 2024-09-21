@@ -1,6 +1,6 @@
 NistRng
 *******
-This is a *python 3.6* and above implementation of the **NIST Test Suite for Random Number Generators** (RNGs) based on [this repo](https://github.com/InsaneMonster/NistRng).
+This is a *python 3.6* and above implementation of the **NIST Test Suite for Random Number Generators** (RNGs) based on `this repo <https://github.com/InsaneMonster/NistRng>`_.
 The idea behind this work is to make a script oriented object-oriented framework for said tests.
 This is born from my research since I required to use the tests inside a python research project and I found existing
 implementation to be not well suited to that task without extensive modifications.
